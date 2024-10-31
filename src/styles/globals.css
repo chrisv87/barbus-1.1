@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-black text-white;
+  }
+}
+
+@layer components {
+  .neon-text {
+    text-shadow: 0 0 10px theme('colors.pink.500'),
+                 0 0 20px theme('colors.pink.500'),
+                 0 0 30px theme('colors.pink.500');
+  }
+}
